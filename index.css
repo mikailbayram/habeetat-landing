@@ -60,16 +60,32 @@
   .Home .section-color, .Home .section-two, .Home .Home .section-six, .Home .section-four, .Home .section-seven, .Home .section-nine {
     color: #596375;
   }
+  .Home .section-eigth{
+    background-color: #1B1E24;
+    text-align: center;
+    background-image: url('./images/bg_kickstarter.jpg');
+    min-height: 340px;
+    padding-top: 30px;
+    background-size: cover;
+  }
+  .Home .section-eigth h4{
+    color: #fff;
+    text-align: center;
+    font-weight: 100;
+  }
+
   .Home .section-one {
     position: relative;
     background: url('./images/sec1.png') center center no-repeat;
     background-size: cover;
     padding-top: 80px;
-    height: 100vh;
+    height: 100%;
+    padding-bottom: 50px;
   }
   .Home .section-one p {
     font-size: 1.2rem;
     padding: 0 !important;
+    text-align: justify;
   }
   .Home .footer-links {
     font-size: 0.7rem;
@@ -96,13 +112,16 @@
       display: none;
     }
     .Home .section-one {
+      height: 100vh;
       padding-top: 20vh;
     }
     .Home .section-one h1 {
       font-size: 4em;
     }
     .Home .section-one p {
-      font-size: 2em;
+      font-size: 1.5em;
+      text-align: left;
+
     }
     .Home .home-container p {
       font-size: 1rem;
