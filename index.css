@@ -69,12 +69,12 @@
     font-weight: 100;
   }
   .device{
-    border: 5px solid lightgray;
+    /* border: 5px solid lightgray; */
     border-radius: 5px;
   }
   .Home .section-one {
     position: relative;
-    background: url('./images/sec1.png') center center no-repeat;
+    background: url('./images/3dmodel.jpg') center center no-repeat;
     background-size: cover;
     padding-top: 80px;
     height: 100%;
