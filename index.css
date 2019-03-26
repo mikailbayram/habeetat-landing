@@ -1,146 +1,174 @@
-  .tac {
-    text-align: center; }
-  
-  .cih {
+.tac {
+    text-align: center;
+}
+
+.cih {
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+}
 .Home {
     background-color: #fff;
     font-size: 16px;
-    font-family: Open Sans,sans-serif;
+    font-family: Open Sans, sans-serif;
     font-weight: 300;
-  }
-  .Home header {
+}
+.Home header {
     width: 100%;
     position: fixed;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.85);
-  }
-  .Home header nav {
+}
+.Home header nav {
     max-width: 1200px;
     margin: 0 auto;
-  }
-  .Home header .navbar-brand {
+}
+.Home header .navbar-brand {
     padding: 0;
     display: flex;
     align-items: center;
-  }
-  .Home header li {
+}
+.Home header li {
     padding: 0.5rem;
     cursor: pointer;
-  }
-  .Home header a {
+}
+.Home header a {
     color: #fff !important;
     text-transform: uppercase;
-  }
-  .Home header .navbar-toggler {
+}
+.Home header .navbar-toggler {
     color: rgba(0, 0, 0, 1);
     background-color: #ffc107;
-  }
-  .Home .home-container {
+}
+.Home .home-container {
     color: #ccc;
     max-width: 1200px;
     margin: 0 auto;
     padding-bottom: 2rem;
-  }
-  .Home .bee-img {
+}
+.Home .bee-img {
     max-height: 50px;
-  }
-  .Home .img-lg {
+}
+.Home .img-lg {
     display: none;
-  }
-  .Home .img-xs {
+}
+.Home .img-xs {
     display: block;
-  }
-  .Home .section-color, .Home .section-two, .Home .Home .section-six, .Home .section-four, .Home .section-seven, .Home .section-nine {
+}
+.Home .section-color,
+.Home .section-two,
+.Home .Home .section-six,
+.Home .section-four,
+.Home .section-seven,
+.Home .section-nine {
     color: #596375;
-  }
-  .Home .section-eigth{
-    background-color: #1B1E24;
+}
+.Home .section-eigth {
+    background-color: #1b1e24;
     text-align: center;
-    background-image: url('./images/bg_kickstarter.png');
+    background-image: url("./images/bg_kickstarter.png");
     min-height: 340px;
     padding-top: 30px;
     background-size: cover;
-  }
-  .Home .section-eigth h4{
+}
+.Home .section-eigth h4 {
     color: #fff;
     text-align: center;
     font-weight: 100;
-  }
-  .device{
+}
+.device {
     /* border: 5px solid lightgray; */
     border-radius: 5px;
-  }
-  .Home .section-one {
+}
+.Home .section-one {
     position: relative;
-    background: url('./images/3dmodel.jpg') center center no-repeat;
+    background: url("./images/3dmodel.jpg") center center no-repeat;
     background-size: cover;
     padding-top: 80px;
     height: 50vh;
     padding-bottom: 50px;
-  }
-  .Home .section-one p {
+}
+.Home .section-one p {
     font-size: 1.2rem;
     padding: 0 !important;
     text-align: justify;
-  }
-  .Home .footer-links {
+}
+.Home .footer-links {
     font-size: 0.7rem;
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 600;
     display: flex;
     align-items: center;
-  }
-  .Home .section-two, .Home .section-six {
+}
+.Home .section-two,
+.Home .section-six {
     padding-top: 40px;
-  }
-  .Home .section-seven h3{
+}
+.Home .section-seven h3 {
     color: #000;
     text-align: center;
     font-size: 32px;
     font-weight: 300;
-  }
-  .Home .section-seven h4{
-  color: #666;
-  text-align: center;
-  font-weight: 100;
-  font-size: 18px;
-  }
-  .header-text{
+}
+.Home .section-seven h4 {
+    color: #666;
+    text-align: center;
+    font-weight: 100;
+    font-size: 18px;
+}
+.header-title,
+.header-subtitle {
     display: none;
-  }
-  @media (min-width: 576px) {
-    .Home .section-two .aboutus-img, .Home .section-six .aboutus-img {
-      min-height: 100px;
-      max-height: 100px;
+}
+
+.header-section-mobile {
+    display: block;
+    text-align: center;
+}
+
+.header-title-mobile {
+    margin-top: -50px;
+}
+
+.preorder-button {
+    padding: 20px;
+}
+
+@media (min-width: 576px) {
+    .Home .section-two .aboutus-img,
+    .Home .section-six .aboutus-img {
+        min-height: 100px;
+        max-height: 100px;
     }
-  }
-  @media (min-width: 992px) {
+}
+@media (min-width: 992px) {
     .Home .img-lg {
-      display: block;
+        display: block;
     }
     .Home .img-xs {
-      display: none;
+        display: none;
     }
     .Home .section-one {
-      height: 100vh;
-      padding-top: 15vh;
+        height: 100vh;
+        padding-top: 15vh;
     }
     .Home .section-one h1 {
-      font-size: 4em;
+        font-size: 4em;
     }
     .Home .section-one p {
-      font-size: 1.5em;
-      text-align: left;
-
+        font-size: 1.5em;
+        text-align: left;
     }
     .Home .home-container p {
-      font-size: 1rem;
+        font-size: 1rem;
     }
-    .header-text{
-      display: block;
+
+    .header-title,
+    .header-subtitle {
+        display: block;
     }
-  }
-  
+
+    .header-section-mobile {
+        display: none;
+    }
+}
