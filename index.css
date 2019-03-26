@@ -1,58 +1,58 @@
 .tac {
-    text-align: center;
+  text-align: center;
 }
 
 .cih {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 .Home {
-    background-color: #fff;
-    font-size: 16px;
-    font-family: Open Sans, sans-serif;
-    font-weight: 300;
+  background-color: #fff;
+  font-size: 16px;
+  font-family: Open Sans, sans-serif;
+  font-weight: 300;
 }
 .Home header {
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.85);
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.85);
 }
 .Home header nav {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .Home header .navbar-brand {
-    padding: 0;
-    display: flex;
-    align-items: center;
+  padding: 0;
+  display: flex;
+  align-items: center;
 }
 .Home header li {
-    padding: 0.5rem;
-    cursor: pointer;
+  padding: 0.5rem;
+  cursor: pointer;
 }
 .Home header a {
-    color: #fff !important;
-    text-transform: uppercase;
+  color: #fff !important;
+  text-transform: uppercase;
 }
 .Home header .navbar-toggler {
-    color: rgba(0, 0, 0, 1);
-    background-color: #ffc107;
+  color: rgba(0, 0, 0, 1);
+  background-color: #ffc107;
 }
 .Home .home-container {
-    color: #ccc;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-bottom: 2rem;
+  color: #ccc;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
 }
 .Home .bee-img {
-    max-height: 50px;
+  max-height: 50px;
 }
 .Home .img-lg {
-    display: none;
+  display: none;
 }
 .Home .img-xs {
-    display: block;
+  display: block;
 }
 .Home .section-color,
 .Home .section-two,
@@ -60,151 +60,155 @@
 .Home .section-four,
 .Home .section-seven,
 .Home .section-nine {
-    color: #596375;
+  color: #596375;
 }
 .Home .section-eigth {
-    background-color: #1b1e24;
-    text-align: center;
-    background-image: url("./images/bg_kickstarter.png");
-    min-height: 340px;
-    padding-top: 30px;
-    background-size: cover;
+  background-color: #1b1e24;
+  text-align: center;
+  background-image: url("./images/bg_kickstarter.png");
+  min-height: 340px;
+  padding-top: 30px;
+  background-size: cover;
 }
 .Home .section-eigth h4 {
-    color: #fff;
-    text-align: center;
-    font-weight: 100;
+  color: #fff;
+  text-align: center;
+  font-weight: 100;
 }
 .device {
-    /* border: 5px solid lightgray; */
-    border-radius: 5px;
-    margin-bottom: 20px;
+  /* border: 5px solid lightgray; */
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 .Home .section-one {
-    position: relative;
-    background: url("./images/3dmodel.jpg") center center no-repeat;
-    background-size: cover;
-    padding-top: 80px;
-    height: 50vh;
-    padding-bottom: 50px;
+  position: relative;
+  background: url("./images/3dmodel.jpg") center center no-repeat;
+  background-size: cover;
+  padding-top: 80px;
+  height: 50vh;
+  padding-bottom: 50px;
 }
 .Home .section-one p {
-    font-size: 1.2rem;
-    padding: 0 !important;
-    text-align: justify;
+  font-size: 1.2rem;
+  padding: 0 !important;
+  text-align: justify;
 }
 .Home .footer-links {
-    font-size: 0.7rem;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
+  font-size: 0.7rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
 }
 .Home .section-two,
 .Home .section-six {
-    padding-top: 40px;
+  padding-top: 40px;
 }
 .Home .section-seven h3 {
-    color: #000;
-    text-align: center;
-    font-size: 32px;
-    font-weight: 300;
+  color: #000;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 300;
 }
 .Home .section-seven h4 {
-    color: #666;
-    text-align: center;
-    font-weight: 100;
-    font-size: 18px;
+  color: #666;
+  text-align: center;
+  font-weight: 100;
+  font-size: 18px;
 }
 .header-section {
-    display: none;
-    font-weight: bolder;
+  display: none;
+  font-weight: bolder;
 }
 
 .header-title span {
-    color: #ffc107;
-    text-shadow: 1px 1px 10px #566480;
+  color: #ffc107;
+  text-shadow: 1px 1px 10px #566480;
 }
 
 .header-section-mobile {
-    display: block;
-    text-align: center;
+  display: block;
+  text-align: center;
 }
 
 .header-title-mobile {
-    margin-top: -50px;
-    font-weight: bold;
+  margin-top: -50px;
+  font-weight: bold;
 }
 
 .list-container {
-    /* list-style-type: none; */
-    /* text-align: justify; */
+  /* list-style-type: none; */
+  /* text-align: justify; */
 }
 
 .list-container li {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 .johnCena {
-    display: none;
-    margin-left: 80px;
-    margin-top: 70px;
+  display: none;
+  margin-left: 80px;
+  margin-top: 70px;
+}
+
+.yellow {
+  background-color: #ffc107;
 }
 
 @media (max-width: 1200px) {
-    .johnCena {
-        margin-top: -15px;
-    }
+  .johnCena {
+    margin-top: -15px;
+  }
 }
 
 @media (min-width: 576px) {
-    .Home .section-two .aboutus-img,
-    .Home .section-six .aboutus-img {
-        min-height: 100px;
-        max-height: 100px;
-    }
+  .Home .section-two .aboutus-img,
+  .Home .section-six .aboutus-img {
+    min-height: 100px;
+    max-height: 100px;
+  }
 }
 @media (min-width: 992px) {
-    .Home .img-lg {
-        display: block;
-    }
-    .Home .img-xs {
-        display: none;
-    }
-    .Home .section-one {
-        height: 100vh;
-        padding-top: 15vh;
-    }
-    .Home .section-one h1 {
-        font-size: 4em;
-    }
-    .Home .section-one p {
-        font-size: 1.5em;
-        text-align: left;
-    }
-    .Home .home-container p {
-        font-size: 1rem;
-    }
+  .Home .img-lg {
+    display: block;
+  }
+  .Home .img-xs {
+    display: none;
+  }
+  .Home .section-one {
+    height: 100vh;
+    padding-top: 15vh;
+  }
+  .Home .section-one h1 {
+    font-size: 4em;
+  }
+  .Home .section-one p {
+    font-size: 1.5em;
+    text-align: left;
+  }
+  .Home .home-container p {
+    font-size: 1rem;
+  }
 
-    .header-section {
-        display: block;
-    }
+  .header-section {
+    display: block;
+  }
 
-    .header-title,
-    .header-subtitle {
-        margin: 30px;
-    }
+  .header-title,
+  .header-subtitle {
+    margin: 30px;
+  }
 
-    .preorder-button {
-        margin-left: 30px;
-    }
+  .preorder-button {
+    margin-left: 30px;
+  }
 
-    .header-section-mobile {
-        display: none;
-    }
+  .header-section-mobile {
+    display: none;
+  }
 
-    .johnCena {
-        display: block;
-    }
+  .johnCena {
+    display: block;
+  }
 }

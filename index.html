@@ -19,11 +19,42 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
-
-
 </head>
 
+
+
 <body>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Preorder</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <p>Habeetat will notify you when product is ready to ship</p>
+              <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="name">First Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="John">
+                  </div>
+                  <div class="form-group">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" class="form-control" id="last_name" placeholder="Doe">
+                  </div>
+                  <button type="submit" class="btn yellow">Submit</button>
+                </form>
+          </div>
+        </div>
+      </div>
+    </div>
   <div class="Home">
     <header>
       <nav class="navbar navbar-expand-md navbar-light bg-faded">
@@ -48,7 +79,9 @@
               <a class="nav-link apps-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#">Apps</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link preorder-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#">Preorder</a>
+                <button type="button" class="btn btn-warning preorder-button m-0" data-toggle="modal" data-target="#exampleModal">
+                    PREORDER NOW
+                </button>
             </li>
             <li class="nav-item">
               <a class="nav-link" target="_blank" href="https://dev.habeetat.io/login">Login</a>
@@ -66,7 +99,8 @@
               <div class="col-md-8 p-1 header-subtitle">
                 <p class="col-12">Monitor and track key metrics in a real time.</p>
               </div>
-              <button class="btn btn-warning preorder-button">PREORDER NOW
+              <button type="button" class="btn btn-warning preorder-button" data-toggle="modal" data-target="#exampleModal">
+                  PREORDER NOW
               </button>
             </div>
           </div>
@@ -79,7 +113,8 @@
         <div class="col-12 p-1">
           <p class="col-12" class="header-subtitle-mobile">Monitor and track key metrics in a real time.</p>
         </div>
-        <button class="btn btn-warning">PREORDER NOW
+        <button type="button" class="btn btn-warning preorder-button" data-toggle="modal" data-target="#exampleModal">
+            PREORDER NOW
         </button>
       </div>
     </div>
@@ -94,7 +129,7 @@
 			  <br />
               <ul class="list-container">
                 <li>Bees are dying rapidly</li>
-                <li>Traditional beekeeping has no practice of data collection for further analysis or future use</li>
+                <li>Traditional beekeeping has no practice of collecting data for further analysis or future use</li>
                 <li>Estimated 50 million active beehives in the world (90% are Longhorn model)</li>
                 <li>Community with minimal knowledge transfer and experience shearing</li>
                 <li>How to transition from traditional beekeeping into data driven methodologies</li>
@@ -178,7 +213,7 @@
         <div class="container">
           <div class="row">
 			  <div class="col-12">
-					<h1 class="tac mb-5" style="color: #333">ha<span style="color:#ffc107">bee</span>tat smart frame</h1>
+					<h1 class="tac mb-5" style="color: #333">ha<span style="color:#ffc107">bee</span>tat “Smart Frame“</h1>
 			  </div>
             <div class="col-md-12 col-lg-9 col-12">
               <img class="img-fluid device" alt='device' src='./images/habeetat-device-new.jpg' />
@@ -291,7 +326,9 @@
         <h4>We are now taking preorders for 2019 ha<span style="color:#ffc107">bee</span>tat Hives</h4>
         <br />
         <br />
-        <button class="btn btn-warning">PREORDER NOW</button>
+        <button type="button" class="btn btn-warning preorder-button" data-toggle="modal" data-target="#exampleModal">
+            PREORDER NOW
+        </button>
         <br />
         <br />
         <br />
@@ -315,7 +352,9 @@
           <a class="aboutus-link">About Us</a>
           <a class="product-link">Product</a>
           <a class="apps-link">Apps</a>
-          <a class="preorder-link">Preorder</a>
+          <button type="button" class="btn btn-warning preorder-button" data-toggle="modal" data-target="#exampleModal">
+              PREORDER NOW
+          </button>
         </div>
         <br />
         <br />
