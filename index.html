@@ -37,20 +37,25 @@
         var xhr = new XMLHttpRequest();
         xhr.withCredentials = true;
 
+        var loading = document.getElementById("loading");
+
         xhr.addEventListener("readystatechange", function () {
-          if (this.readyState === 4) {
-            var modalbody = document.getElementById("modalbody");
-            modalbody.parentNode.removeChild(modalbody);
+          if (this.readyState === 1) {
+              var modalbody = document.getElementById("modalbody");
+              modalbody.parentNode.removeChild(modalbody);
 
-            var modalsuccess = document.getElementById("modalsuccess");
-            modalsuccess.style.display = "block";
-          } else {
-            var modalbody = document.getElementById("modalbody");
-            modalbody.parentNode.removeChild(modalbody);
-
-            var modalfail = document.getElementById("modalfail");
-            modalfail.style.display = "block";
+              loading.style.display = "block";
           }
+          if (this.readyState === 4) {
+            loading.style.display = "none";
+            if(this.status == 200){
+              var modalsuccess = document.getElementById("modalsuccess");
+              modalsuccess.style.display = "block";
+            } else {
+              var modalfail = document.getElementById("modalfail");
+              modalfail.style.display = "block";
+            }
+          } 
 
         });
 
@@ -89,6 +94,9 @@
                   </div>
                   <button type="submit" class="btn yellow">Submit</button>
                 </form>
+          </div>
+          <div id="loading" class="modal-body" style="display:none">
+            <p>Sending, Please wait...</p>
           </div>
           <div id="modalsuccess" class="modal-body" style="display:none">
               <p>Thank you! Your request has been successfully recorded. You will also receive email confirmation. You can now close this page.</p>
