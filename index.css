@@ -2,6 +2,10 @@
     text-align: center;
 }
 
+.margin-top {
+    margin-top: 30px !important;
+}
+
 .spread {
     margin-top: 40px;
 }
@@ -137,17 +141,31 @@
 }
 
 .header-title-mobile {
-    margin-top: -50px;
+    /* margin-top: -50px; */
+    margin-top: 30px;
     font-weight: bold;
 }
 
-.list-container {
-    /* list-style-type: none; */
+.list-container,
+.list-container ul {
+    list-style-type: none;
     /* text-align: justify; */
 }
 
 .list-container li {
     margin: 5px 0;
+}
+
+.list-number {
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #ffc107;
+    /* text-shadow: 1px 1px 10px #566480; */
+}
+
+.list-letter {
+    font-weight: bold;
 }
 
 .johnCena {
@@ -158,6 +176,11 @@
 
 .yellow {
     background-color: #ffc107;
+}
+
+.subtitle-text {
+    font-size: 28px;
+    font-weight: bold;
 }
 
 @media (max-width: 1200px) {
