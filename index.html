@@ -24,6 +24,44 @@
 
 
 <body>
+    <script>
+      function preorder(e){
+        e && e.preventDefault();
+
+        var data = JSON.stringify({
+          "email": document.getElementById("exampleInputEmail1").value,
+          "first_name": document.getElementById("name").value,
+          "last_name": document.getElementById("last_name").value,
+        });
+
+        var xhr = new XMLHttpRequest();
+        xhr.withCredentials = true;
+
+        xhr.addEventListener("readystatechange", function () {
+          if (this.readyState === 4) {
+            var modalbody = document.getElementById("modalbody");
+            modalbody.parentNode.removeChild(modalbody);
+
+            var modalsuccess = document.getElementById("modalsuccess");
+            modalsuccess.style.display = "block";
+          } else {
+            var modalbody = document.getElementById("modalbody");
+            modalbody.parentNode.removeChild(modalbody);
+
+            var modalfail = document.getElementById("modalfail");
+            modalfail.style.display = "block";
+          }
+
+        });
+
+        xhr.open("POST", "https://v2.habeetat.io/preorder");
+        xhr.setRequestHeader("Content-Type", "application/json");
+
+        xhr.send(data);
+
+      }
+     
+    </script>
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -33,9 +71,9 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
+          <div class="modal-body" id="modalbody">
               <p>Habeetat will send you notification when product is ready to ship.</p>
-              <form>
+              <form onsubmit="preorder(event.preventDefault())">
                   <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
@@ -51,6 +89,16 @@
                   </div>
                   <button type="submit" class="btn yellow">Submit</button>
                 </form>
+          </div>
+          <div id="modalsuccess" class="modal-body" style="display:none">
+              <p>Thank you! Your request has been successfully recorded. You will also receive email confirmation. You can now close this page.</p>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+          <div id="modalfail" class="modal-body" style="display:none">
+              <p>There was en error submitting your requests.</p>
+              <p>Please contact administrator at semir@habeetat.io</p>
+              <p>Thank you!</p>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
