@@ -162,6 +162,21 @@
     text-align: center;
 }
 
+
+.section-bg,
+.section-bg-web {
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin: 20px 5px;
+}
+
+.section-bg-mobile {
+    background-color: transparent;
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .mission-wrap {
     text-align: justify;
     margin-top: 30px !important;
@@ -241,6 +256,26 @@
 @media (max-width: 1200px) {
     .johnCena {
         margin-top: -15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-bg {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .section-bg-web {
+        background-color: transparent;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .section-bg-mobile {
+        background-color: #f3f3f3;
+        border-radius: 10px;
+        padding: 10px 30px;
+        margin: 20px 0;
     }
 }
 
