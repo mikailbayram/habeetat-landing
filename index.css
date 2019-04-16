@@ -253,6 +253,12 @@
     color: #ffc107;
 }
 
+.Home .section-two .aboutus-img,
+.Home .section-six .aboutus-img {
+    min-height: 120px;
+    max-height: 120px;
+}
+
 @media (max-width: 1200px) {
     .johnCena {
         margin-top: -15px;
@@ -279,13 +285,6 @@
     }
 }
 
-@media (min-width: 576px) {
-    .Home .section-two .aboutus-img,
-    .Home .section-six .aboutus-img {
-        min-height: 100px;
-        max-height: 100px;
-    }
-}
 @media (min-width: 992px) {
     .Home .img-lg {
         display: block;
